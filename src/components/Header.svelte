@@ -4,8 +4,15 @@
     export let tabs = [
         { name: "Projects & Experience", link: "#projects" },
         { name: "About Me", link: "#about" },
-        { name: "Resume", link: "#resume" },
+        { name: "Resume", link: "./assets/Gia_Neve_Resume.pdf" },
     ];
+
+    function scrollToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 
 <header
@@ -27,13 +34,9 @@
                 <p>{tab.name}</p>
             </a>
         {/each}
-        <button
-            class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-green-950"
-        >
-            <div
-                class="absolute top-0 right-full w-full h-full bg-slate-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
-            />
+        <button class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-green-950" on:click={scrollToContact}>
+            <div class="absolute top-0 right-full w-full h-full bg-slate-500 opacity-20 group-hover:translate-x-full z-0 duration-200"></div>
             <h4 class="relative z-9">Contact Me</h4>
-        </button>
+          </button>
     </div>
 </header>

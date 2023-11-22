@@ -1,6 +1,5 @@
 <script>
     import Step from "./Step.svelte";
-
     let steps = [
         {
             name: "Machines",
@@ -62,12 +61,34 @@
         buttonLink: "#"
       }
     ];
+
+    let status = "";
+    const handleSubmit = async data => {
+    status = 'Submitting...'
+    const formData = new FormData(data.currentTarget)
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: json
+  });
+  const result = await response.json();
+  if (result.success) {
+      console.log(result);
+      status = result.message || "Success"
+  }
+}
 </script>
 
 <main class="flex flex-col flex-1 p-4">
     <section
         id="introPage"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14 lg:pb-100"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
     >
         <div
             class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
@@ -155,19 +176,6 @@
     </div>
     {/each}
 
-<!--     {#each projects as project, i}
-      <div class="{i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-4">
-        <div class="w-full bg-slate-50 p-4 animate-fade-in-left">
-          <h2 class="text-2xl font-semibold">{project.title}</h2>
-          <p class="text-lg mt-2">{project.sub}</p>
-        </div>
-        <div class="w-full bg-slate-100 p-4">
-
-          <p class="mt-2">{project.description}</p>
-        </div>
-      </div>
-    {/each} -->
-
     <section
         id="about"
         class="py-20 pt-10 lg:p-16 lg:py-32 flex flex-col gap-24 sm:gap-20 md:gap-24 relative"
@@ -217,4 +225,92 @@
             </div>
         </div>
     </section>
+
+<!--     <section id="contact" class="bg-slate-50 ">
+        <div class="py-8 pt-0 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-semibold text-center">Contact Me</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Got a technical issue? Need further details about my experience? Let me know!</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@domain.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-semibold text-center text-slate-50 rounded-lg bg-lime-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+      </section> -->
+
+    <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+
+    <section id="contact" class="bg-slate-50">
+    <div class="container mx-auto">
+      <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            Contact Us
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="7f10393f-6648-4773-937f-e900da98483c" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+                <input type="text" name="name" id="first_name" placeholder="John" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+              <div class="w-full md:w-1/2">
+                <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+                <input type="text" name="last_name" id="lname" placeholder="Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+            </div>
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+  
+              <div class="w-full md:w-1/2">
+                <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+  
+              <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Send Message
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
 </main>
