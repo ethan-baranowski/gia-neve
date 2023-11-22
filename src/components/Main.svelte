@@ -45,17 +45,21 @@
       {
       title: "Modular Clean Room Design - Aneuvas Technologies",
       sub: "Northern Arizona University Mechanical Engineering Capstone 2023-2024",
-      description: "test"
+      description: "Info for cleanroom"
       },
       {
         title: "E3 Displays",
         sub: "Internship 2021",
-        description: "test"
+        description: "Info for E3",
+        imageSrc: "#",
+        imageAlt: "#"
       },
       {
         title: "Future Engineers Summer Camp",
         sub: "Northern Arizona University 2022",
-        description: "test"
+        description: "Info for summer camp",
+        buttonLabel: "Learn More",
+        buttonLink: "#"
       }
     ];
 </script>
@@ -63,7 +67,7 @@
 <main class="flex flex-col flex-1 p-4">
     <section
         id="introPage"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14 lg:pb-100"
     >
         <div
             class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
@@ -102,21 +106,13 @@
                 Curious to <span class="poppins text-lime-500">see</span> my work?
             </h3>
         </div>
-        <a
-            href="https://www.youtube.com/watch?v=3SAACToqsCw"
-            target="_blank"
-            class="mx-auto px-4 py-2 rounded-md border border-solid border-white bg-lime-500 flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-black duration-200"
-        >
-            <i class="fa-regular fa-circle-play" />
-            <p>Watch this!</p>
-        </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
                 <p class="text-lg">
                     Operational experience with machines such as Stratasy Printers<strong
                         class="text-lime-500">(Fortus 400/250 and J35 PolyJet)</strong
                     >,
-                    <strong class="text-lime-500">Markforger Mark 2</strong
+                    <strong class="text-lime-500">Markforged Mark Two</strong
                     >, and
                     <strong class="text-lime-500">Bosslaser</strong> Lasercutter
                 </p>
@@ -133,31 +129,44 @@
             </Step>
             <Step step={steps[2]}>
                 <p class="text-lg">
-                    Other <strong class="text-lime-500"
-                        >Skills</strong
-                    >
-                    might
-                    <strong class="text-lime-500"></strong>,
-                    go
-                    <strong class="text-lime-500">...</strong>
-                    here
+                    Ask me about the software I use! Such as, <strong class="text-lime-500"
+                        >Solidworks, LightBurn, GrabCAD, Reality Composer, </strong
+                    > and more!
                 </p>
             </Step>
         </div>
     </section>
 
     {#each projects as project, i}
+    <div class="{i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-4 project-box">
+      <div class="w-full bg-slate-50 p-4">
+        <h2 class="text-2xl font-semibold">{project.title}</h2>
+        <p class="text-lg mt-2">{project.sub}</p>
+        {#if project.buttonLabel && project.buttonLink}
+          <a href="{project.buttonLink}" class="mt-4 inline-block px-4 py-2 bg-lime-500 text-white rounded hover:bg-slate-500">{project.buttonLabel}</a>
+        {/if}
+      </div>
+      <div class="w-full bg-slate-100 p-4">
+        {#if project.imageSrc && project.imageAlt}
+          <img src="{project.imageSrc}" alt="{project.imageAlt}" class="w-full h-auto">
+        {/if}
+        <p class="mt-2">{project.description}</p>
+      </div>
+    </div>
+    {/each}
+
+<!--     {#each projects as project, i}
       <div class="{i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-4">
         <div class="w-full bg-slate-50 p-4 animate-fade-in-left">
           <h2 class="text-2xl font-semibold">{project.title}</h2>
           <p class="text-lg mt-2">{project.sub}</p>
         </div>
         <div class="w-full bg-slate-100 p-4">
-          <!-- Add any additional content or styling for the right side of the project box -->
+
           <p class="mt-2">{project.description}</p>
         </div>
       </div>
-    {/each}
+    {/each} -->
 
     <section
         id="about"
