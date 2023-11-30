@@ -26,17 +26,17 @@
             metric: "10x",
             name: "Mechancial Engineering Graduate",
             description:
-                "descrip",
+                "I have acquired a strong foundation in engineering principles and problem-solving techniques. With my comprehensive knowledge in the field, I am equipped to tackle complex challenges and deliver innovative solutions. My academic background, combined with practical experience gained from working in various domains, enables me to excel in both team environments and individual projects.",
         },
         {
-            name: "a product design & UX finatic",
+            name: "Experienced Multidisciplinary Engineer",
             description:
-                "Carefully crafting and designing amazing user experiences allows me to express and experiment with every morsel of creativity I have. I love the challenge of learning new design concepts and enabling users with amazing online experiences.",
+                "Demonstrating proficiency in various domains and industries, including mechanical engineering, team collaboration, and individual project management.",
         },
         {
-            name: "an excellent communicator",
+            name: "Versatile Problem Solver",
             description:
-                "Communication is key and it's a paramount value of mine. I believe in transparency and constructive communication above all else. This helps me develop deep relationships and ensures my effectiveness and productivity in any work space with any team.",
+                "Successfully tackled challenges in diverse settings, from working at renowned companies like E3, designing displays for esteemed clients like Tesla, to founding and managing a university lab environment.",
         },
     ];
 
@@ -44,19 +44,34 @@
       {
       title: "Modular Clean Room Design - Aneuvas Technologies",
       sub: "Northern Arizona University Mechanical Engineering Capstone 2023-2024",
-      description: "Info for cleanroom"
+      description: "For my senior capstone project, I led a team in designing and building a modular curtained clean room area. The goal was to establish sterile manufacturing capabilities for stroke treatment medical devices while converting the existing clean room into a gowning room. Our project focused on creating a modular clean room that could be easily disassembled and reassembled. We successfully met requirements such as FFU compatibility, positive pressure, space for 6 people, and 10' x 10' floor space per module. Our project contributed to optimizing the workflow and ensuring a sterile environment for medical device assembly.",
+      buttonLabel: "Learn More",
+      buttonLink: "https://www.ceias.nau.edu/capstone/projects/ME/2024/F23toSp24_CleanRoom/index.html",
+      imageSrc: "",
+      imageAlt: ""
+    },
+      {
+        title: "IDEA Lab Manager",
+        sub: "Northern Arizona University 2020 - 2023",
+        description: "As one of the original members and designers of the IDEA Lab at NAU, I played an instrumental in enhancing its functionality and creating a welcoming environment for students. My contributions included a range of responsibilities, including creating work order forms, establishing lab rules, expanding machine offerings, repairing 3D printers, training team members, organizing machine information, managing data, coordinating with faculty, ensuring lab safety, educating students on manufacturing methods, providing design feedback, ordering materials, creating informative displays, and maintaining communication with safety staff. The lab's success is a direct result of my proactive approach and dedication as one of the lab's founders and designers.",
+        buttonLabel: "Learn More",
+        buttonLink: "https://ceias.nau.edu/me/idealab/",
+        imageSrc: "",
+        imageAlt: ""
       },
       {
         title: "E3 Displays",
         sub: "Internship 2021",
-        description: "Info for E3",
-        imageSrc: "#",
-        imageAlt: "#"
+        description: "Info for E3 Pending",
+        buttonLabel: "Learn More",
+        buttonLink: "https://www.e3displays.com/about-us/",
+        imageSrc: "",
+        imageAlt: ""
       },
       {
         title: "Future Engineers Summer Camp",
         sub: "Northern Arizona University 2022",
-        description: "Info for summer camp",
+        description: "Info for Summer Camp Pending",
         buttonLabel: "Learn More",
         buttonLink: "#"
       }
@@ -101,14 +116,14 @@
             <p class="text-base sm:text-lg md:text-xl">
                 Welcome to my <span class="text-lime-500">Personal Portfolio</span>
             </p>
-            <button
-                class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
+<!--             <button
+                id='contact' class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
             >
                 <div
                     class="absolute top-0 right-full w-full h-full bg-slate-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
                 />
                 <h4 class="relative z-9">Contact Me &rarr;</h4>
-            </button>
+            </button> -->
         </div>
         <div class="relative shadow-2xl grid place-items-center">
             <img
@@ -121,10 +136,10 @@
     <section class="py-20 lg:py-32 flex flex-col gap-24 transition ease-in-out" id="projects">
         <div class="flex flex-col gap-2 text-center">
             <h6 class="text-large sm:text-xl md:text-2xl">
-                A few of my creative endeavors.
+                Engineering Proficiencies at a Glance
             </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                Curious to <span class="poppins text-lime-500">see</span> my work?
+                Discover My <span class="poppins text-lime-500">Technical Expertise</span>
             </h3>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
@@ -219,7 +234,6 @@
                     <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./images/matlab.svg" alt="matlab" width="158" height="48">
                     <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./images/sw.svg" alt="solidworks" width="158" height="48">
                     <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="./images/stratasys-seeklogo.com.svg" alt="stratasy" width="158" height="48">
-                    <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="./images/pepe.svg" alt="Statamic" width="158" height="48">
                 </div>
                 </div>
             </div>
@@ -261,13 +275,13 @@
 
     <section id="contact" class="bg-slate-50">
     <div class="container mx-auto">
-      <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="max-w-xl mx-auto my-10 p-5 rounded-md shadow-sm">
         <div class="text-center">
-          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
-            Contact Us
+          <h1 class="my-3 text-3xl font-semibold text-gray-700">
+            Contact Me
           </h1>
           <p class="text-gray-400 dark:text-gray-400">
-            Fill up the form below to send us a message.
+            Fill up the form below to send me a message.
           </p>
         </div>
         <div class="m-7">

@@ -43,6 +43,7 @@ h3,
 .img {
   object-position: center;
   object-fit: cover;
+  background-color: transparent;
 }
 
 @keyframes fade-in {
