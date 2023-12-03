@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.blueShadow {
+  box-shadow: 0px 14px 55px rgba(63, 98, 18, 0.55)
+}
+
+.specialSpin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
+}
+
+.img {
+  object-position: center;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1.2s ease-in-out;
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 0.5s ease-out;
+}
+
+@keyframes fade-in-left {
+  from{
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
