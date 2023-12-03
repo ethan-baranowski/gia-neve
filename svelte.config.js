@@ -1,13 +1,13 @@
-import adapter from "@sveltejs/adapter-auto";
-import { vitePreprocess } from "@sveltejs/kit/vite";
-import dotenv from 'dotenv';
+import adapter from '@sveltejs/adapter-auto';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-dotenv.config();
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  kit: {
-    adapter: adapter(),
-  },
-  preprocess: vitePreprocess(),
+    kit: {
+        appDir: 'app', // Required as the default is _app
+        adapter: adapter()
+    },
+    preprocess: vitePreprocess()
 };
 export default config;
+
