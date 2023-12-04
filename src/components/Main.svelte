@@ -127,7 +127,7 @@
         </div>
         <div class="relative shadow-2xl grid place-items-center">
             <img
-                src={"images/gia.png"}
+                src={"images/gia_eng.jpg"}
                 alt=""
                 class="animate-fade-in object-cover z-[2] max-h-[70vh]"
             />
