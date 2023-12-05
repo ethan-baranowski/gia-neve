@@ -47,8 +47,8 @@
       description: "For my senior capstone project, I led a team in designing and building a modular curtained clean room area. The goal was to establish sterile manufacturing capabilities for stroke treatment medical devices while converting the existing clean room into a gowning room. Our project focused on creating a modular clean room that could be easily disassembled and reassembled. We successfully met requirements such as FFU compatibility, positive pressure, space for 6 people, and 10' x 10' floor space per module. Our project contributed to optimizing the workflow and ensuring a sterile environment for medical device assembly.",
       buttonLabel: "Learn More",
       buttonLink: "https://www.ceias.nau.edu/capstone/projects/ME/2024/F23toSp24_CleanRoom/index.html",
-      imageSrc: "",
-      imageAlt: ""
+      imageSrc: "images/cleanroom_des.jpeg",
+      imageAlt: "Clean Room Design"
     },
       {
         title: "IDEA Lab Manager",
@@ -62,7 +62,7 @@
       {
         title: "E3 Displays",
         sub: "Internship 2021",
-        description: "Info for E3 Pending",
+        description: "During my internship at E3, I had the opportunity to contribute to a significant project focused on the improvement of a debonder device. This Capstone project, funded by E3 and developed at NAU, aimed to remove glass from digital display electrical components. However, upon delivery, the debonder proved to be inefficient and bulky. My role involved reimagining the design and functionality of the debonder to address its shortcomings. Through careful analysis and innovative thinking, I successfully redesigned the device, making it more compact and efficient in its operation. Additionally, I had the chance to contribute to various aspects of the project, including the design and manufacturing of sheet metal jigs to house electrical components, conducting dry optical bonding testing, and working in the company's cleanroom for product testing and manufacturing. Throughout my internship at E3, I gained valuable experience in problem-solving, design optimization, and collaboration within a professional engineering environment.",
         buttonLabel: "Learn More",
         buttonLink: "https://www.e3displays.com/about-us/",
         imageSrc: "",
@@ -71,7 +71,7 @@
       {
         title: "Future Engineers Summer Camp",
         sub: "Northern Arizona University 2022",
-        description: "Info for Summer Camp Pending",
+        description: "During my time as a Mechanical Engineering New Graduate, I had the opportunity to design and host two impactful summer camps at NAU. The first camp, held in 2021, was a Girls in STEM summer camp aimed at introducing young girls to the exciting world of engineering. The main objective was to break gender stereotypes and showcase that engineering is not limited to boys. Through engaging activities and hands-on projects, the camp provided a solid foundation in engineering fundamentals. Building on the success of the previous year, I organized a second summer camp in 2022 that expanded its reach to elementary students from a reservation. This camp delved deeper into design principles and placed a strong emphasis on robotics. Over the course of a week, the students were immersed in the process of designing, building, and racing LEGO robots. By providing them with practical experience in engineering, we aimed to inspire and empower these young minds to pursue their interests in the field.",
         buttonLabel: "Learn More",
         buttonLink: "#"
       }
@@ -108,13 +108,13 @@
         <div
             class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
         >
-            <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                Hi! I'm <span class="poppins text-lime-500">Gia</span> Neve
+            <h2 class="font-light text-4xl sm:text-5xl md:text-6xl">
+                Hi! I'm <span class="poppins text-green-700">Gia</span> Neve
                 <br /> Mechanical
-                <span class="poppins text-lime-500">Engineer</span>
+                <span class="poppins text-green-700">Engineer</span>
             </h2>
-            <p class="text-base sm:text-lg md:text-xl">
-                Welcome to my <span class="text-lime-500">Personal Portfolio</span>
+            <p class="font-light sm:text-lg md:text-3xl">
+                Welcome to my <span class="text-green-700">Personal Portfolio</span>
             </p>
 <!--             <button
                 id='contact' class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
@@ -125,11 +125,11 @@
                 <h4 class="relative z-9">Contact Me &rarr;</h4>
             </button> -->
         </div>
-        <div class="relative shadow-2xl grid place-items-center">
+        <div class="hero-container">
             <img
                 src={"images/gia_eng.jpg"}
                 alt=""
-                class="animate-fade-in object-cover z-[2] max-h-[70vh]"
+                class="animate-fade-in object-cover z-[2] max-h-[70vh] rounded-lg hero-image"
             />
         </div>
     </section>
@@ -184,7 +184,7 @@
       </div>
       <div class="w-full bg-slate-100 p-4">
         {#if project.imageSrc && project.imageAlt}
-          <img src="{project.imageSrc}" alt="{project.imageAlt}" class="w-full h-auto">
+          <img src="{project.imageSrc}" alt="{project.imageAlt}" class="responsive-image">
         {/if}
         <p class="mt-2">{project.description}</p>
       </div>

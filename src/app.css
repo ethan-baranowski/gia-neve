@@ -17,6 +17,19 @@ h3,
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width:640px){
+  #introPage{
+    text-align: center;
+  }
+  img{
+    max-height: 50vh;
+  }
+}
+
+#introPage{
+  height: 85vh;
+}
+
 .blueShadow {
   box-shadow: 0px 14px 55px rgba(63, 98, 18, 0.55)
 }
@@ -40,10 +53,36 @@ h3,
   background-position: center;
 }
 
+.hero-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image{
+  width: 100%;
+  height: auto;
+}
+
 .img {
   object-position: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: transparent;
+  border: none;
+}
+
+.responsive-image{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  padding-bottom: 25px;
   object-fit: cover;
   background-color: transparent;
+  border-radius: 8px;
+  
 }
 
 @keyframes fade-in {
