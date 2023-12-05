@@ -17,6 +17,7 @@ h3,
   font-family: "Poppins", sans-serif;
 }
 
+
 @media (max-width:640px){
   #introPage{
     text-align: center;
@@ -109,3 +110,31 @@ h3,
   }
 }
 
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.project-description {
+  flex: 1;
+  background-color: #F0F4F8;
+  padding: 1rem;
+}
+
+.project-images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.project-image {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
