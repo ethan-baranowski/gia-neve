@@ -258,6 +258,7 @@
 
                     </div>
                 </div>
+
                 <div>
                     <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                         <div class="lg:col-start-2">
@@ -295,7 +296,91 @@
                             </div>
                         </div>
                         <div class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-                            <img src="/images/IDEA-lab.jpg" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+                            <img src="/images/lab.jpg" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold tracki sm:text-3xl">E3 Displays</h3>
+                        <p class="mt-3 text-lg dark:text-gray-400">Internship 2021</p>
+                        <div class="mt-12 space-y-12">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-green-700 dark:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium leadi">Redesign</h4>
+                                    <p class="mt-2 dark:text-gray-400">&#8226; Redesigned a debonder device to improve efficiency and compactness</p>
+                                    <p class="mt-2 dark:text-gray-400">&#8226; Reimagined the design and functionality of the debonder to address shortcomings</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-md dark:bg-green-700 dark:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium leadi">Technicalities</h4>
+                                    <p class="mt-2 dark:text-gray-400">&#8226; Designed and manufactured sheet metal jigs for housing electrical components</p>
+                                    <p class="mt-2 dark:text-gray-400">&#8226; Conducted dry optical bonding testing and worked in a cleanroom for product testing</p>
+                                    <p class="mt-2 dark:text-gray-400">&#8226; Contributed to various aspects of the project, including problem-solving and collaboration</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <img id="e3" src="/images/e3.png" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                        <div class="lg:col-start-2">
+                            <h3 class="text-2xl font-bold tracki sm:text-3xl ">Future Engineers Summer Camp</h3>
+                            <p class="mt-3 text-lg dark:text-gray-400">Northern Arizona University 2021 - 2022</p>
+                            <div class="mt-12 space-y-12">
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="flex items-center justify-center w-12 h-12 rounded-md  dark:bg-green-700 dark:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-medium leadi ">Motivation</h4>
+                                        <p class="mt-2 dark:text-gray-400">&#8226; Organized summer camps to inspire and empower students in STEM fields</p>
+                                        <p class="mt-2 dark:text-gray-400">&#8226; Introduced engineering to young girls and emphasized inclusivity</p>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex-shrink-0">
+                                        <div class="flex items-center justify-center w-12 h-12 rounded-md  dark:bg-green-700 dark:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="text-lg font-medium leadi ">Design and Education</h4>
+                                        <p class="mt-2 dark:text-gray-400">&#8226; Developed engaging activities and hands-on projects to teach engineering fundamentals</p>
+                                        <p class="mt-2 dark:text-gray-400">&#8226; Expanded the camp to include elementary students from underprivileged communities, particularly those residing in reservations, with a specific focus on robotics and design principles</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
+                            <img src="/images/summer-camp.jpg" alt="" class="mx-auto rounded-lg shadow-lg dark:bg-gray-500">
                         </div>
                     </div>
                 </div>
