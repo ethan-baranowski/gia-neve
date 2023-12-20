@@ -24,11 +24,11 @@
     <h1 class="text-4xl">
         <b class="font-bold poppins">Gia</b> <span class="">Neve</span>
     </h1>
-    <div class="sm:flex text-lg items-center gap-4 hidden">
+    <div class="ml-10 mr-10 sm:flex text-lg items-center gap-4 hidden">
         {#each tabs as tab, index}
             <a
                 href={tab.link}
-                class="duration-200 hover:text-lime-500"
+                class="duration-200 hover:text-green-700"
                 target={index === 2 ? "_blank" : ""}
             >
                 <p>{tab.name}</p>

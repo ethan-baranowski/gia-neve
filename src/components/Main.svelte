@@ -134,14 +134,10 @@
             <p class="font-light sm:text-lg md:text-3xl">
                 Welcome to my <span class="text-green-700">Personal Portfolio</span>
             </p>
-<!--             <button
-                id='contact' class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
-            >
-                <div
-                    class="absolute top-0 right-full w-full h-full bg-slate-500 opacity-20 group-hover:translate-x-full z-0 duration-200"
-                />
-                <h4 class="relative z-9">Contact Me &rarr;</h4>
-            </button> -->
+            <a href="./assets/Gia_Neve_Resume.pdf" target="_blank" rel="noopener noreferrer" class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950">
+                <div class="absolute top-0 right-full w-full h-full bg-slate-500 opacity-20 group-hover:translate-x-full z-0 duration-200"></div>
+                <h4 class="relative z-9">Resume &rarr;</h4>
+            </a>
         </div>
         <div class="hero-container">
             <img
@@ -151,6 +147,7 @@
             />
         </div>
     </section>
+
     <section class="py-20 lg:py-32 flex flex-col gap-24 transition ease-in-out" id="projects">
         <div class="flex flex-col gap-2 text-center">
             <h6 class="font-light text-large sm:text-xl md:text-2xl">
@@ -190,31 +187,9 @@
             </Step>
         </div>
     </section>
-
-<!--         {#each projects as project, i}
-        <div class="project-container">
-        <div class="project-description">
-            <h2 class="text-2xl font-light">{project.title}</h2>
-            <p class="text-lg mt-2">{project.sub}</p>
-            {#if project.buttonLabel && project.buttonLink}
-            <a href="{project.buttonLink}" class="mt-4 inline-block px-4 py-2 bg-green-700 text-white rounded hover:bg-slate-500">{project.buttonLabel}</a>
-            {/if}
-            <p class="mt-2">{project.description}</p>
-        </div>
-        <div class="project-images">
-            {#each project.images as image}
-            <img src="{image.src}" alt="{image.alt}" class="project-image">
-            {/each}
-        </div>
-        </div>
-        {/each} -->
-
-        <section class="bg-gray-50">
+        
+    <section class="bg-gray-50 py-20">
             <div class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-<!--                 <div>
-                    <h2 class="text-3xl font-bold tracki text-center sm:text-5xl">Test H2</h2>
-                    <p class="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Testing for the p tag</p>
-                </div> -->
                 <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div>
                         <h3 class="text-2xl font-bold tracki sm:text-3xl">Modular Clean Room Design - Aneuvas Technologies</h3>
@@ -386,17 +361,87 @@
                 </div>
             </div>
         </section>
+            
+       <!--  <section class="py-20">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right ">
+                    <caption class="text-2xl font-bold tracki sm:text-3xl p-5 text-left rtl:text-right bg-white dark:bg-gray-50">
+                        Relevant Coursework
+                        <p class="mt-1 text-sm font-normal">A comprehensive compilation of my coursework and demonstrated expertise, specifically tailored to the engineering field.</p>
+                    </caption>
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Course name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Discipline
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Emphasis
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-50 border-b dark:bg-gray-100 ">
+                            <th scope="row" class="px-6 py-4 font-normal  whitespace-nowrap">
+                                Course A
+                            </th>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam odio eveniet, cum ipsa, nemo, quas explicabo mollitia optio voluptate autem quis rem repudiandae. Asperiores repellendus ad odio eius non.
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50 dark:bg-gray-150">
+                            <th scope="row" class="px-6 py-4 font-normal whitespace-nowrap">
+                                Course B
+                            </th>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem minima nam! Fugit quidem quasi qui optio fugiat odit labore ea, incidunt accusamus vitae enim debitis voluptas tempora asperiores ullam.
+                            </td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b dark:bg-gray-100">
+                            <th scope="row" class="px-6 py-4 font-normal  whitespace-nowrap">
+                                Course C
+                            </th>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Empty
+                            </td>
+                            <td class="px-6 py-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam odio eveniet, cum ipsa, nemo, quas explicabo mollitia optio voluptate autem quis rem repudiandae. Asperiores repellendus ad odio eius non.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section> -->
 
     <section
         id="about"
-        class="py-20 pt-10 lg:p-16 lg:py-32 flex flex-col gap-24 sm:gap-20 md:gap-24 relative"
-    >
+        class="py-20 pt-10 lg:p-16 lg:py-32 flex flex-col gap-24 sm:gap-20 md:gap-24 relative">
         <div
             class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-slate-400 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-slate-400 py-4"
         >
-            <h6 class="text-large sm:text-xl md:text-2xl">
+            <h4 class="text-xl sm:text-xl md:text-2xl">
                 Want to know more?
-            </h6>
+            </h4>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                 A bit <span class="poppins text-green-700">about</span> me.
             </h3>
@@ -418,59 +463,56 @@
                 </div>
             {/each}
         </div>
-        <div class="flex flex-col gap-10 w-full">
-        <div class="bg-slate-50 py-10 sm:py-32">
-                <div class="mx-auto w-full px-6 lg:px-8">
-                <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
-                <div class="mx-auto mt-10 grid w-full grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./images/python.svg" alt="python" width="158" height="48">
-                    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./images/matlab.svg" alt="matlab" width="158" height="48">
-                    <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./images/sw.svg" alt="solidworks" width="158" height="48">
-                    <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="./images/stratasys-seeklogo.com.svg" alt="stratasy" width="158" height="48">
-                </div>
-                </div>
-            </div>
-        </div>
     </section>
 
-<!--     <section id="contact" class="bg-slate-50 ">
-        <div class="py-8 pt-0 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 class="mb-4 text-4xl tracking-tight font-semibold text-center">Contact Me</h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Got a technical issue? Need further details about my experience? Let me know!</p>
-            <form action="#" class="space-y-8">
-                <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@domain.com" required>
-                </div>
-                <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
-                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
-                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                </div>
-                <button type="submit" class="py-3 px-5 text-sm font-semibold text-center text-slate-50 rounded-lg bg-green-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-            </form>
+    <section class="py-20">
+        <div class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
+            <h2 class="text-3xl font-light">Industry Familiarity</h2>
+            <div class="flex flex-wrap justify-center lg:justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>Python</title>
+                    <image href="./images/python-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>MATLAB</title>
+                    <image href="./images/matlab-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>SolidWorks</title>
+                    <image href="./images/solidworks-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>Svelte</title>
+                    <image href="./images/svelte-icon-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>VS Code</title>
+                    <image href="./images/visual-studio-code-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>Microsoft</title>
+                    <image href="./images/microsoft-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Angular" class="w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+                    <title>Google</title>
+                    <image href="./images/google-logo-search-new-svgrepo-com.svg" width="32" height="32" />
+                </svg>
+            </div>
         </div>
-      </section> -->
 
-    <!-- 
-    =======================================================================
-
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
-
-    =======================================================================
- -->
+        <div class="grid grid-cols-2 gap-2 sm:gap-4">
+            <img src="./images/Creality.png" alt="Creality Logo" class="w-1/2 h-auto max-w-[200px] mx-auto" />
+            <img src="./images/SSYS.png" alt="Stratasys Logo" class="w-1/2 h-auto max-w-[200px] mx-auto" />
+        </div>
+        
+    </section>
+    
 
     <section id="contact" class="bg-slate-50">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto my-10 p-5 rounded-md shadow-sm">
         <div class="text-center">
-          <h1 class="my-3 text-3xl font-semibold text-gray-700">
+          <h1 class="my-3 text-3xl font-light text-gray-700">
             Contact Me
           </h1>
           <p class="text-gray-400 dark:text-gray-400">
@@ -510,7 +552,7 @@
               <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
             </div>
             <div class="mb-6">
-              <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-green-700 rounded-md focus:bg-green-700 focus:outline-none">
                 Send Message
               </button>
             </div>
