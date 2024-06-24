@@ -1,7 +1,10 @@
 <script>
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
   import "../app.css";
+  
   let y;
   let innerWidth = 0;
   let innerHeight = 0;
@@ -9,6 +12,9 @@
   function goTop() {
       document.body.scrollIntoView();
   }
+
+  // Inject the analytics script with the appropriate mode
+  inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <div
